@@ -1,0 +1,12 @@
+certifi==2026.2.25
+charset-normalizer==3.4.6
+future==1.0.0
+idna==3.11
+ply==3.11
+pyzk==0.9
+requests==2.32.5
+setuptools==75.9.1
+six==1.17.0
+thriftpy2==0.5.3
+urllib3==2.6.3
+zk==0.9.4
