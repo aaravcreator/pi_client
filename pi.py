@@ -875,8 +875,8 @@ def sync_loop():
     """
     ip, zk, conn = discover_zkt_device_with_cache()
     if not conn:
-        print("[FATAL] Could not connect to any ZKT device. Exiting.")
-        return
+        print("[FATAL] Could not connect to any ZKT device. Exiting with failure so systemd can retry.")
+        raise SystemExit(1)
 
     print(f"[OK] Connected to ZKT at {ip}")
 
